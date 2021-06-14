@@ -18,4 +18,10 @@ var typed = new Typed("#typed", {
     typeSpeed: 110,
     loop: true,
   });
-  
+  //owl-carousel
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000
+
+  });

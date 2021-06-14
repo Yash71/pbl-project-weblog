@@ -38,6 +38,13 @@ ul{
 h2{
     
 }
+span{
+    font-family: 'Abel', sans-serif;
+}
+.container{
+    margin: 0 5vh ;
+}
+
 .button-bt{
 border: none;
 border-radius: 1rem;
@@ -136,6 +143,7 @@ main .web-title{
     height: 110vh;
     display: flex;
     justify-content: center;
+    
 
 }
 main .web-title .web-bg{
@@ -155,6 +163,57 @@ main .web-title .button-bt:hover{
     
 }
 /*--------------------web-title----------------*/
+/* blog */
+main .blog-main{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+}
+main .blog-main .blog-post{
+    padding-top: 3rem;
+    
+}
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: 4rem 3rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.959); 
+    transition: all .3s ease-in-out;
+}
+main .blog-post .blog-content:hover{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+    }
+main .blog-content .blog-title{
+    padding: 2rem 0;
+    background: white;
+    
+}
+main .blog-content .btn-blog{
+    padding: 0.7rem 2rem;
+    background: #4353ff;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--white);
+}
+main .blog-content .btn-blog:hover{
+    background:#4353ffc5;
+}
+main .blog-content span{
+    display: block;
+}
+/* Site Content */
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
 /*----------------------Main-----------------------------*/
 /* Viewport less than or equal to 750px */
 @media only screen and (max-width:750px){
