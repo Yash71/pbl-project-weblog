@@ -228,7 +228,6 @@ main .site-content{
     grid-template-columns: 70% 30%;
 }
 main .post-contents{
-    /* margin-bottom: 5rem; */
     width: 100%;
 }
 main .site-content .post-contents>.post-img,.post-title{
@@ -298,10 +297,45 @@ main .site-content .pagination{
     background: #4f5cebdc;
 }
 /* sidebar */
+.site-content .sidebar h2{
+    padding: 0 2rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
 .site-content>.sidebar .category-list{
     font-family: 'Raleway', sans-serif;
 }
-.site-content>.sidebar .category-list .list-items
+.site-content>.sidebar .category-list .list-items{
+    background:linear-gradient(-225deg, #3949f8 0%, #5965ebdc 48%, #8c93e2dc 100%);
+    padding: 0.4rem 1rem;
+    margin: 0.8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+.site-content>.sidebar .category-list .list-items a{
+    color: var(--white);
+}
+.site-content .sidebar .popular-post .post-contents{
+    padding: 1rem 0;
+}
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+}
+.site-content .sidebar .popular-post .post-info{
+    padding: 0.4rem 0.1rem !important;
+    bottom: 0rem !important;
+    left: 2rem !important;
+    border-radius: 0rem !important;
+    /* background: var(--white) !important; */
+}
+.site-content >.sidebar .popular-post .post-title a{
+
+    font-size: 1.4rem;
+}
+
 /*----------------------Main-----------------------------*/
 /* Viewport less than or equal to 750px */
 @media only screen and (max-width:750px){
