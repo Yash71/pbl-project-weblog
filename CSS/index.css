@@ -63,6 +63,35 @@ cursor: pointer;
 p{
     font-family: 'Montserrat', sans-serif;
 }
+.fa-facebook-f:hover{
+    color: #4267B2 !important;
+}
+.fa-instagram:hover{
+    color: #c737bb !important;
+}
+.fa-twitter:hover{
+    color: #38A1F2 !important;
+
+}
+.fa-youtube:hover{
+    color: #ff0000 !important;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
 /*-----------------navigation bar------------------- */
 .navigation-main{
     background: white;
@@ -75,6 +104,9 @@ p{
 }
 .navigation-main .nav-menu {
     justify-content: space-between;
+}
+.navigation-main .nav-menu .nav-band a:hover{
+    color: #4353ff;
 }
 .navigation-main .toggle-collapse{
     position: absolute;
@@ -108,11 +140,11 @@ p{
     font-size: 1.1rem;
 }
 .navigation-main .nav-items .nav-link:hover{
-    background-color:var(--midnight);
+    background-color:#3949f8;
     
 }
 .navigation-main .nav-items .nav-link:hover a{
-    color: var(--bg-color);
+    color:var(--white);
     
 }
 
@@ -129,19 +161,6 @@ p{
 }
 .navigation-main .social i{
     padding: 0 0.2rem;
-}
-.navigation-main .social .fa-facebook-f:hover{
-    color: #4267B2 !important;
-}
-.navigation-main .social .fa-instagram:hover{
-    color: #c737bb !important;
-}
-.navigation-main .social .fa-twitter:hover{
-    color: #38A1F2 !important;
-
-}
-.navigation-main .social .fa-youtube:hover{
-    color: #ff0000 !important;
 }
 /*-----------------navigation bar------------------- */
 /*----------------------Main-----------------------------*/
@@ -175,7 +194,7 @@ main .web-title .button-bt:hover{
 /*--------------------web-title----------------*/
 /* blog */
 main .blog-main{
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -200,7 +219,6 @@ main .blog-post .blog-content:hover{
     }
 main .blog-post .blog-content>h3,button,span{
     font-family: 'Abel', sans-serif;
-}
 }
 main .blog-content .blog-title{
     padding: 2rem 0;
@@ -335,8 +353,139 @@ main .site-content .pagination{
 
     font-size: 1.4rem;
 }
+.site-content .sidebar .newsletter{
+    padding-top: 10rem;
 
+}
+.site-content .sidebar .newsletter .form-email-name{
+    padding: 0.5rem 2rem;
+}
+.site-content .sidebar .newsletter .input-element{
+    width: 70%;
+    height: 1.1rem;
+    padding: 0.1rem 0.5rem;
+    margin: 1rem;
+}
+.site-content .sidebar .newsletter .form-btn{
+    background: #4353ff;
+    border-radius: 1rem;
+    padding: 0.5rem 36%;
+    color: var(--white);
+    /* margin: 0.5rem 1rem; */
+}
+.site-content .sidebar .newsletter .form-btn:hover{
+    background: #4f5cebdc;
+}
+.site-content .sidebar .popular-tags{
+    padding: 6rem 0;
+    
+}
+.site-content .sidebar .popular-tags .tags-pop{
+    display: flex;
+  flex-wrap: wrap;
+}
+.site-content .sidebar .popular-tags .tags-pop .tag{
+    background:linear-gradient(-225deg, #3949f8 0%, #5965ebdc 48%, #8c93e2dc 100%);    
+    padding: 0.4rem 1rem;
+    border-radius: 3rem;
+    margin: 0.4rem 0.6rem;
+    color: var(--white);
+    cursor: pointer;
+    /* font-size: 0; */
+}
 /*----------------------Main-----------------------------*/
+/* ----------------------Footer--------------------------- */
+footer.footer-main{
+    height: 100%;
+    background: black;
+    position: relative;
+    
+}
+footer.footer-main .container{
+    display: grid;   
+    grid-template-columns: repeat(4,1fr);
+}
+footer.footer-main .container>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+    color: var(--text-light);
+    
+}
+footer.footer-main .container h2{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+
+}
+footer.footer-main .container p{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+footer.footer-main .need-help .form-element{
+    background: black;
+    display: inline-block;
+
+}
+footer.footer-main .form-element input{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    width: 74%;
+}
+footer.footer-main .need-help .form-element span{
+    background: #4353ff;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    color: var(--white);
+}
+footer.footer-main .gallery div>img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: 0.3rem 0.4rem;
+}
+footer.footer-main .follow div i{
+    color: white;
+    padding: 0 0.4rem;
+    cursor: pointer;
+}
+footer.footer-main .copyright{
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+}
+footer.footer-main .copyright a{
+    color: var(--white);
+}
+footer.footer-main .tpscrl-btn{    
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    color: white;
+}
+footer.footer-main .tpscrl-btn:hover{
+    cursor: pointer;
+}
+
+
+
+/* ----------------------Footer--------------------------- */
+
+/* Viewport less than or equal to 1130px */
+@media only screen and (max-width:1130px){
+    main .site-content .post-contents> .post-img .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 2rem !important;
+    }
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+    footer.footer-main .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Viewport less than or equal to 1130px */
 /* Viewport less than or equal to 750px */
 @media only screen and (max-width:750px){
     .navigation-main .nav-menu,.navigation-main .nav-items{
@@ -347,5 +496,32 @@ main .site-content .pagination{
         display: initial;
         
     }
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    footer.footer-main .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* Viewport less than or equal to 750px */
+/* Viewport less than or equal to 750px */
+@media only screen and (max-width:520px){
+    main .blog-main{
+        height: 125vh;
+    }
+    .site-content .post-contents>.post-img .post-info{
+        display: none;
+    }
+    footer.footer-main .container>div{
+        padding: 1rem 0.9rem !important;
+    }
+    footer .copyright{
+        padding: 0rem 6rem;
+        text-align: center;
+    }
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+    
 }
 /* Viewport less than or equal to 750px */

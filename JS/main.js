@@ -1,3 +1,17 @@
+const responsive={
+  0:{
+    items:1
+  },
+  320:{
+    items:1
+  },
+  560:{
+    items:2
+  },
+  960:{
+    items:3
+  }
+}
 $(document).ready(function(){
     $nav=$('.navigation-main');
     $toggleCollapse=$('.toggle-collapse');
@@ -22,6 +36,12 @@ var typed = new Typed("#typed", {
   $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,
-    autoplayTimeout:3000
-
+    autoplayTimeout:3000,
+    responsive: responsive
   });
+  // top scroller button
+  $(".tpscrl-btn span").click(function(){
+    $("html,body").animate({
+      scrollTop:0
+    },1000);
+  })
