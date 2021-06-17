@@ -16,6 +16,9 @@
     <!-- Using custom styling -->
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- custom scroll in animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- Google Custom Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -31,7 +34,8 @@
 </head>
 
 <body>
-    <!-------------Navigation---------->
+    <!-------------------------------------------------Navigation----------------------------------------------------->
+
     <nav class="navigation-main">
         <div class="nav-menu flex-row">
             <div class="nav-band">
@@ -69,11 +73,18 @@
             </div>
         </div>
     </nav>
-    <!-------------Main lander--------------->
+
+    <!-------------------------------------------------Navigation----------------------------------------------------->
+
+
+
+    <!-------------------------------------------------Main Lander---------------------------------------------------->
+
     <main>
-        <!-- Web Title -->
+        <!---------------------------------------------Web Title------------------------------------------------------>
+
         <section class="web-title">
-            <div class="web-bg">
+            <div class="web-bg" data-aos="fade-up" data-aos-delay="100" data-aos="fade-right" data-aos-delay="200">
                 <div id="string-type">
                     <h3>Web Dev</h3>
                 </div>
@@ -87,14 +98,18 @@
                 <button class="button-bt hvr-grow">Explore</button>
             </div>
         </section>
-        <!-- Web Title -->
 
-        <!-- Blog horizontal carousel -->
+        <!---------------------------------------------Web Title------------------------------------------------------>
+
+
+
+        <!--------------------------------------Blog horizontal carousel---------------------------------------------->
+
         <section>
             <div class="blog-main">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                             <img src="./assets/Blog Posts/post1.jpg" alt="post-image-1">
                             <div class="blog-title">
                                 <h3>Designing the best colour scheme</h3>
@@ -102,7 +117,7 @@
                                 <span>Tyler Jackson</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
                             <img src="./assets/Blog Posts/post2.jpg" alt="">
                             <div class="blog-title">
                                 <h3>Master Web Dev with <i class="fab fa-vuejs"></i></h3>
@@ -110,7 +125,7 @@
                                 <span>Martha Reeves</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
                             <img src="./assets/Blog Posts/post3.jpg" alt="">
                             <div class="blog-title">
                                 <h3>Server Migration for users</h3>
@@ -118,7 +133,7 @@
                                 <span>Joshua J. Horn</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                             <img src="./assets/Blog Posts/post4.png" alt="">
                             <div class="blog-title">
                                 <h3>UI/UX:Design The Web</h3>
@@ -126,7 +141,7 @@
                                 <span>Rick Dobby</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-" data-aos-delay="200">
                             <img src="./assets/Blog Posts/post5.jpg" alt="">
                             <div class="blog-title">
                                 <h3>Designing a colour scheme</h3>
@@ -138,12 +153,17 @@
                 </div>
             </div>
         </section>
-        <!-- Blog horizontal carousel -->
-        <!-- Site content main -->
+
+        <!--------------------------------------Blog horizontal carousel---------------------------------------------->
+
+
+
+        <!-------------------------------------------Site Content----------------------------------------------------->
+
         <section class="container">
             <div class="site-content">
                 <div class="blog-posts">
-                    <div class="post-contents">
+                    <div class="post-contents" data-aos="zoom-in" data-aos-delay="100">
                         <div class="post-img">
                             <div>
                                 <img src="./assets/Blog Posts/blog1.jpg" class="img" alt="">
@@ -165,7 +185,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-contents">
+                    <div class="post-contents" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-img">
                             <div>
                                 <img src="./assets/Blog Posts/blog2.jpeg" class="img" alt="">
@@ -187,7 +207,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-contents">
+                    <div class="post-contents" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-img">
                             <div>
                                 <img src="./assets/Blog Posts/blog3.jpg" class="img" alt="">
@@ -199,7 +219,8 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">I am a professional web developer but these CSS tricks blew my mind</a>
+                            <a href="#">Its Better to work in an alliance rather than working alone: 5 Reasons that
+                                prove it</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ducimus optio? Aut vel
                                 voluptates in. Vitae qui iusto eos asperiores, placeat pariatur odio voluptatum itaque,
                                 similique eius eligendi molestias esse!
@@ -209,7 +230,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-contents">
+                    <div class="post-contents" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-img">
                             <div>
                                 <img src="./assets/Blog Posts/blog4.jpg" class="img" alt="">
@@ -221,7 +242,7 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">I am a professional web developer but these CSS tricks blew my mind</a>
+                            <a href="#">Chrome Dev tools: Iterate, Debug and Profile your website</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ducimus optio? Aut vel
                                 voluptates in. Vitae qui iusto eos asperiores, placeat pariatur odio voluptatum itaque,
                                 similique eius eligendi molestias esse!
@@ -231,7 +252,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-contents">
+                    <div class="post-contents" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-img">
                             <div>
                                 <img src="./assets/Blog Posts/blog5.jpg" class="img" alt="">
@@ -243,7 +264,8 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">I am a professional web developer but these CSS tricks blew my mind</a>
+                            <a href="#">Best Free Online Courses on Web Dev offered by Coursera and Stanford
+                                University</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ducimus optio? Aut vel
                                 voluptates in. Vitae qui iusto eos asperiores, placeat pariatur odio voluptatum itaque,
                                 similique eius eligendi molestias esse!
@@ -251,6 +273,7 @@
                             <button class="button-bt post-btn hvr-grow">Read More&nbsp;<i
                                     class="fas fa-caret-right"></i></button>
                         </div>
+                        <!----------------horizontal in-page scroll pagination------------------>
                         <div class="pagination flex-row">
                             <a href="#"><i class="fas fa-angle-left hvr-grow"></i></a>
                             <a href="#" class="page-number hvr-grow">1</a>
@@ -258,33 +281,34 @@
                             <a href="#" class="page-number hvr-grow">3</a>
                             <a href="#"><i class="fas fa-angle-right hvr-grow"></i></a>
                         </div>
+                        <!----------------horizontal in-page scroll pagination------------------>
                     </div>
                 </div>
                 <aside class="sidebar">
                     <div class="categories">
                         <h2>Category <i class="fas fa-th-list"></i></h2>
                         <ul class="category-list">
-                            <li class="list-items hvr-grow">
+                            <li class="list-items hvr-grow" data-aos="fade-left" data-aos-delay="100">
                                 <a href="#">Software</a>
                                 <span>(06)</span>
 
                             </li>
-                            <li class="list-items hvr-grow">
+                            <li class="list-items hvr-grow" data-aos="fade-left" data-aos-delay="200">
                                 <a href="#">Frameworks</a>
                                 <span>(08)</span>
 
                             </li>
-                            <li class="list-items hvr-grow">
+                            <li class="list-items hvr-grow" data-aos="fade-left" data-aos-delay="300">
                                 <a href="#">Design</a>
                                 <span>(24)</span>
 
                             </li>
-                            <li class="list-items hvr-grow">
+                            <li class="list-items hvr-grow" data-aos="fade-left" data-aos-delay="400">
                                 <a href="#">Packages</a>
                                 <span>(12)</span>
 
                             </li>
-                            <li class="list-items hvr-grow">
+                            <li class="list-items hvr-grow" data-aos="fade-left" data-aos-delay="500">
                                 <a href="#">DataBase</a>
                                 <span>(09)</span>
 
@@ -293,7 +317,7 @@
                     </div>
                     <div class="popular-post">
                         <h2>Popular Post <i class="fas fa-fire"></i></h2>
-                        <div class="post-contents">
+                        <div class="post-contents" data-aos="fade-up" data-aos-delay="100">
                             <div class="post-img">
                                 <div>
                                     <img src="./assets/Blog Posts/sidebar-blog1.png" class="img" alt="">
@@ -305,12 +329,12 @@
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#"class="hvr-grow">Earn with the web dev skill you develop</a>
+                                <a href="#" class="hvr-grow">Earn with the web dev skill you develop</a>
 
                             </div>
 
                         </div>
-                        <div class="post-contents">
+                        <div class="post-contents" data-aos="fade-up" data-aos-delay="200">
                             <div class="post-img">
                                 <div>
                                     <img src="./assets/Blog Posts/sidebar-blog2.png" class="img" alt="">
@@ -322,12 +346,12 @@
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#"class="hvr-grow">Create cool websites with Bootstrap</a>
+                                <a href="#" class="hvr-grow">Create cool websites with Bootstrap</a>
 
                             </div>
 
                         </div>
-                        <div class="post-contents">
+                        <div class="post-contents" data-aos="fade-up" data-aos-delay="300">
                             <div class="post-img">
                                 <div>
                                     <img src="./assets/Blog Posts/sidebar-blog3.jpg" class="img" alt="">
@@ -339,12 +363,12 @@
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#"class="hvr-grow">React vs Angular vs Vue</a>
+                                <a href="#" class="hvr-grow">React vs Angular vs Vue</a>
 
                             </div>
 
                         </div>
-                        <div class="post-contents">
+                        <div class="post-contents" data-aos="fade-up" data-aos-delay="400">
                             <div class="post-img">
                                 <div>
                                     <img src="./assets/Blog Posts/sidebar-blog4.jpg" class="img" alt="">
@@ -374,39 +398,46 @@
                     <div class="popular-tags">
                         <h2>Popular</h2>
                         <div class="tags-pop">
-                            <span class="tag hvr-grow">HTML5</span>
-                            <span class="tag hvr-grow">Frameworks</span>
-                            <span class="tag hvr-grow">UI/UX</span>
-                            <span class="tag hvr-grow">MySQL</span>
-                            <span class="tag hvr-grow">JQuery</span>
-                            <span class="tag hvr-grow">JS</span>
-                            <span class="tag hvr-grow">CSS3</span>
-                            <span class="tag hvr-grow">AWS</span>
-                            <span class="tag hvr-grow">Azure</span>
-                            <span class="tag hvr-grow">React</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="100">HTML5</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="200">Frameworks</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="300">UI/UX</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="400">MySQL</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="500">JQuery</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="600">JS</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="700">CSS3</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="800">AWS</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="900">Azure</span>
+                            <span class="tag hvr-grow" data-aos="fade-up" data-aos-delay="1000">React</span>
                         </div>
                     </div>
                 </aside>
             </div>
         </section>
-    </main>
-    <!-------------Main lander--------------->
 
-    <!--------------Footer------------------------------>
+        <!-------------------------------------------Site Content----------------------------------------------------->
+
+    </main>
+    <!-------------------------------------------------Main Lander---------------------------------------------------->
+
+
+
+    <!--------------------------------------------------Footer-------------------------------------------------------->
+
     <footer class="footer-main">
         <div class="container">
-            <div class="about-us">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
                 <h2>About Us</h2>
                 <p>Domain Build, Cupertino, California, USA <br>Email:build.dom@domain.com</p>
             </div>
-            <div class="need-help">
+            <div class="need-help" data-aos="fade-right" data-aos-delay="200">
                 <h2>Need Help</h2>
                 <p>We'll contact you!</p>
                 <div class="form-element">
-                    <input type="email" placeholder="Email"><span><i class="fas fa-chevron-circle-right hvr-grow" ></i></span>
+                    <input type="email" placeholder="Email"><span><i
+                            class="fas fa-chevron-circle-right hvr-grow"></i></span>
                 </div>
             </div>
-            <div class="gallery">
+            <div class="gallery" data-aos="fade-left" data-aos-delay="200">
                 <h2>Gallery</h2>
                 <div class="flex-row ">
                     <img src="./assets/Blog Posts/card1.jpg" alt="" class="hvr-grow">
@@ -419,7 +450,7 @@
                     <img src="./assets/Blog Posts/card6.png " alt="" class="hvr-grow">
                 </div>
             </div>
-            <div class="follow">
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
                 <h2>Follow Us</h2>
                 <p>Lets get socially attached</p>
                 <div>
@@ -433,16 +464,23 @@
         </div>
         <div class="copyright flex-row">
             <h4 class="text-gray">
-                Copyright ©2021 All rights reserved | 
-                <a href="#" class="hvr-grow"><i class="fas fa-code-branch"></i> made by Yash Mishra, Nitesh Mali & Neelabh</a>
+                Copyright ©2021 All rights reserved |
+                <a href="#" class="hvr-grow"><i class="fas fa-code-branch"></i> made by Yash Mishra, Nitesh Mali &
+                    Neelabh</a>
             </h4>
         </div>
         <div class="tpscrl-btn hvr-grow">
             <span><i class="fas fa-arrow-circle-up fa-2x "></i></span>
             <br>
-            <span >&nbsp;TOP</span>
+            <span>&nbsp;TOP</span>
         </div>
     </footer>
+
+    <!--------------------------------------------------Footer-------------------------------------------------------->
+
+
+    <!----------------------------------------------Useful JS Files--------------------------------------------------->
+
     <!-- typing effect js  -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- custom jQuery library -->
@@ -451,6 +489,11 @@
     <script src="JS/owl.carousel.js"></script>
     <!-- custom js -->
     <script src="./JS/main.js"></script>
+    <!-- custom scroll in animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-----------------------------------------------Useful JS Files--------------------------------------------------->
+
 </body>
 
 </html>

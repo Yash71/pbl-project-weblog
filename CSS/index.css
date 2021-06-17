@@ -35,9 +35,6 @@ ul{
     font-size: 2.5rem;
 
 }
-h2{
-    
-}
 span{
     font-family: 'Abel', sans-serif;
 }
@@ -427,7 +424,7 @@ footer.footer-main .need-help .form-element{
 }
 footer.footer-main .form-element input{
     padding: 0.5rem 0.7rem;
-    border: none;
+    border: 2px solid white;
     background: transparent;
     color: white;
     font-size: 1rem;
